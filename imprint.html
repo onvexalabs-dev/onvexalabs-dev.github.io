@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imprint — OnvexaLabs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #06060f; --purple: #7c3aed; --purple-light: #a855f7; --cyan: #06b6d4; --cyan-light: #22d3ee;
+      --text: #f1f5f9; --text-muted: #94a3b8; --glass: rgba(255,255,255,0.04); --glass-border: rgba(255,255,255,0.08);
+    }
+    body { background: var(--bg); color: var(--text); font-family: "Inter", sans-serif; line-height: 1.7; }
+    .bg-canvas { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+    .orb { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.1; }
+    .orb-1 { width: 500px; height: 500px; background: var(--cyan); top: -200px; left: -100px; }
+    .orb-2 { width: 400px; height: 400px; background: var(--purple); bottom: -100px; right: -100px; }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 18px 24px; background: rgba(6,6,15,0.75);
+      backdrop-filter: blur(20px); border-bottom: 1px solid var(--glass-border);
+    }
+    .nav-inner { max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo {
+      font-family: "Orbitron", monospace; font-weight: 700; font-size: 1rem; letter-spacing: 0.05em;
+      background: linear-gradient(135deg, var(--purple-light), var(--cyan-light));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none;
+    }
+    .nav-back { color: var(--text-muted); text-decoration: none; font-size: 0.875rem; transition: color 0.2s; }
+    .nav-back:hover { color: var(--text); }
+    .container { max-width: 900px; margin: 0 auto; padding: 120px 24px 80px; position: relative; z-index: 1; }
+    .page-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--purple-light); margin-bottom: 12px; }
+    h1 { font-family: "Orbitron", monospace; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; margin-bottom: 8px; }
+    .meta { color: var(--text-muted); font-size: 0.875rem; margin-bottom: 48px; }
+    .content { background: var(--glass); border: 1px solid var(--glass-border); border-radius: 20px; padding: 48px; }
+    h2 { font-family: "Orbitron", monospace; font-size: 1.1rem; font-weight: 700; color: var(--purple-light); margin: 36px 0 12px; }
+    h2:first-child { margin-top: 0; }
+    p { color: var(--text-muted); margin-bottom: 14px; }
+    a { color: var(--purple-light); }
+    strong { color: var(--text); font-weight: 600; }
+    .notice {
+      background: rgba(124,58,237,0.08); border: 1px solid rgba(124,58,237,0.25);
+      border-radius: 10px; padding: 16px 20px; margin-top: 32px;
+    }
+    .notice p { color: var(--text-muted); font-size: 0.875rem; margin: 0; }
+    footer { position: relative; z-index: 1; border-top: 1px solid var(--glass-border); padding: 32px 24px; text-align: center; }
+    .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+    .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 0.82rem; }
+    .footer-links a:hover { color: var(--text); }
+    @media (max-width: 600px) { .content { padding: 28px 20px; } }
+  </style>
+</head>
+<body>
+<div class="bg-canvas"><div class="orb orb-1"></div><div class="orb orb-2"></div></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">ONVEXALABS</a>
+    <a href="index.html" class="nav-back">← Back to Home</a>
+  </div>
+</nav>
+
+<div class="container">
+  <p class="page-label">Legal</p>
+  <h1>Imprint</h1>
+  <p class="meta">Impressum gemäß § 5 ECG (Österreich) / Angaben gemäß § 5 TMG (Deutschland)</p>
+
+  <div class="content">
+    <h2>Information pursuant to § 5 ECG</h2>
+    <p>
+      <strong>OnvexaLabs</strong><br/>
+      Manfred Uschan<br/>
+      <strong>[YOUR STREET ADDRESS]</strong><br/>
+      <strong>[YOUR POSTAL CODE] [YOUR CITY]</strong><br/>
+      Austria
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      E-Mail: <a href="mailto:onvexalabs@gmail.com">onvexalabs@gmail.com</a>
+    </p>
+
+    <h2>Online Presence</h2>
+    <p>
+      Website: <a href="https://onvexalabs-dev.github.io" target="_blank" rel="noopener">onvexalabs-dev.github.io</a><br/>
+      Game: <a href="https://cracklash.cc" target="_blank" rel="noopener">cracklash.cc</a><br/>
+      Linktree: <a href="https://linktr.ee/onvexalabs" target="_blank" rel="noopener">linktr.ee/onvexalabs</a>
+    </p>
+
+    <h2>Nature of Business</h2>
+    <p>
+      Independent game developer and publisher of browser games and mobile applications.
+      OnvexaLabs is not a registered company (Einzelperson / natural person). Activities are carried out
+      as a private individual. No VAT ID (Umsatzsteuer-Identifikationsnummer) required at current scale.
+    </p>
+
+    <h2>Responsible for Content (§ 18 Abs. 2 MStV / § 5 ECG)</h2>
+    <p>
+      Manfred Uschan<br/>
+      (Address as above)
+    </p>
+
+    <h2>Dispute Resolution (EU Online Dispute Resolution)</h2>
+    <p>
+      The European Commission provides a platform for online dispute resolution (ODR):
+      <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr</a>
+    </p>
+    <p>
+      We are not obligated nor willing to participate in dispute resolution proceedings before a consumer arbitration board,
+      as our services are free of charge and do not involve commercial contracts with consumers in the traditional sense.
+    </p>
+
+    <h2>Liability for Content</h2>
+    <p>
+      The contents of our pages have been created with the greatest care. However, we cannot guarantee the
+      accuracy, completeness or currency of the content. As a service provider we are responsible for our
+      own content on these pages in accordance with general law. However, we are not obligated to monitor
+      transmitted or stored third-party information or to investigate circumstances indicating illegal activity.
+    </p>
+
+    <h2>Liability for Links</h2>
+    <p>
+      Our website contains links to external third-party websites, over whose content we have no influence.
+      Therefore, we cannot accept any liability for these external contents. The respective provider or
+      operator of the linked pages is always responsible for the contents of those pages.
+    </p>
+
+    <h2>Copyright</h2>
+    <p>
+      The content and works published on this website are subject to Austrian and European copyright law.
+      Duplication, processing, distribution or any form of commercialisation of such material beyond the
+      scope of the copyright law requires the prior written consent of OnvexaLabs.
+    </p>
+
+    <div class="notice">
+      <p>
+        ⚠️ <strong>Action needed:</strong> Replace the placeholder address above with your actual postal address
+        before publishing. An Impressum with a real address is legally required in Austria and Germany
+        for any commercially-active online presence.
+      </p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="imprint.html">Imprint</a>
+  </div>
+</footer>
+</body>
+</html>

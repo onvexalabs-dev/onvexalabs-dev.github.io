@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — OnvexaLabs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #06060f; --purple: #7c3aed; --purple-light: #a855f7; --cyan: #06b6d4; --cyan-light: #22d3ee;
+      --text: #f1f5f9; --text-muted: #94a3b8; --glass: rgba(255,255,255,0.04); --glass-border: rgba(255,255,255,0.08);
+    }
+    body { background: var(--bg); color: var(--text); font-family: "Inter", sans-serif; line-height: 1.7; }
+    .bg-canvas { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+    .orb { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.1; }
+    .orb-1 { width: 500px; height: 500px; background: var(--purple); top: -200px; right: -100px; }
+    .orb-2 { width: 400px; height: 400px; background: var(--cyan); bottom: -100px; left: -100px; }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 18px 24px; background: rgba(6,6,15,0.75);
+      backdrop-filter: blur(20px); border-bottom: 1px solid var(--glass-border);
+    }
+    .nav-inner { max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo {
+      font-family: "Orbitron", monospace; font-weight: 700; font-size: 1rem; letter-spacing: 0.05em;
+      background: linear-gradient(135deg, var(--purple-light), var(--cyan-light));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-decoration: none;
+    }
+    .nav-back { color: var(--text-muted); text-decoration: none; font-size: 0.875rem; transition: color 0.2s; }
+    .nav-back:hover { color: var(--text); }
+    .container { max-width: 900px; margin: 0 auto; padding: 120px 24px 80px; position: relative; z-index: 1; }
+    .page-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--purple-light); margin-bottom: 12px; }
+    h1 { font-family: "Orbitron", monospace; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; margin-bottom: 8px; }
+    .meta { color: var(--text-muted); font-size: 0.875rem; margin-bottom: 48px; }
+    .content { background: var(--glass); border: 1px solid var(--glass-border); border-radius: 20px; padding: 48px; }
+    h2 { font-family: "Orbitron", monospace; font-size: 1.1rem; font-weight: 700; color: var(--purple-light); margin: 36px 0 12px; }
+    h2:first-child { margin-top: 0; }
+    p { color: var(--text-muted); margin-bottom: 14px; }
+    ul { color: var(--text-muted); padding-left: 20px; margin-bottom: 14px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--purple-light); }
+    strong { color: var(--text); font-weight: 600; }
+    footer { position: relative; z-index: 1; border-top: 1px solid var(--glass-border); padding: 32px 24px; text-align: center; }
+    .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+    .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 0.82rem; }
+    .footer-links a:hover { color: var(--text); }
+    @media (max-width: 600px) { .content { padding: 28px 20px; } }
+  </style>
+</head>
+<body>
+<div class="bg-canvas"><div class="orb orb-1"></div><div class="orb orb-2"></div></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">ONVEXALABS</a>
+    <a href="index.html" class="nav-back">← Back to Home</a>
+  </div>
+</nav>
+
+<div class="container">
+  <p class="page-label">Legal</p>
+  <h1>Terms of Service</h1>
+  <p class="meta">Last updated: September 2026</p>
+
+  <div class="content">
+    <h2>1. Acceptance of Terms</h2>
+    <p>
+      By accessing or using any website, web game, or mobile application operated by <strong>OnvexaLabs</strong>
+      (collectively, the "Services"), you agree to be bound by these Terms of Service ("Terms").
+      If you do not agree, please do not use the Services.
+    </p>
+
+    <h2>2. Who We Are</h2>
+    <p>
+      OnvexaLabs is an indie game studio operated by Manfred Uschan.
+      Our current services include the website onvexalabs-dev.github.io, the browser game Cracklash (cracklash.cc),
+      and Android applications on Google Play. Contact: <a href="mailto:onvexalabs@gmail.com">onvexalabs@gmail.com</a>.
+    </p>
+
+    <h2>3. Eligibility</h2>
+    <p>
+      You must be at least 13 years of age (or 16 years of age if you are in the European Union) to use our Services.
+      By using the Services, you represent that you meet this age requirement. If you are under the applicable age,
+      you must obtain consent from a parent or legal guardian before using the Services.
+    </p>
+
+    <h2>4. License to Use</h2>
+    <p>
+      We grant you a limited, non-exclusive, non-transferable, revocable licence to access and use our Services
+      for personal, non-commercial entertainment purposes, subject to these Terms.
+    </p>
+    <p>You may not:</p>
+    <ul>
+      <li>Copy, modify, distribute, sell or lease any part of our Services or software.</li>
+      <li>Reverse engineer, decompile or attempt to extract the source code of our games or applications.</li>
+      <li>Use automated tools, bots, or scripts to access or interact with the Services.</li>
+      <li>Attempt to gain unauthorised access to any part of the Services or our servers.</li>
+      <li>Use the Services in any manner that could damage, disable, or impair them.</li>
+      <li>Use the Services for any unlawful purpose or in violation of any applicable regulation.</li>
+    </ul>
+
+    <h2>5. In-Game Content and Virtual Items</h2>
+    <p>
+      Our current games are free to play and do not offer in-app purchases or real-money transactions.
+      Any virtual in-game items, scores, or progress data have no monetary value and cannot be exchanged
+      for real money or transferred to other users. We reserve the right to modify, reset, or remove
+      in-game content at any time without notice or compensation.
+    </p>
+
+    <h2>6. Advertisements</h2>
+    <p>
+      Some of our mobile applications display advertisements served by <strong>Google AdMob</strong>.
+      These ads are provided by third parties and are subject to Google's own terms and privacy policy.
+      We do not control the content of ads shown. You can adjust your ad personalisation preferences
+      in your device settings.
+    </p>
+
+    <h2>7. Intellectual Property</h2>
+    <p>
+      All content included in or made available through the Services — including but not limited to text,
+      graphics, logos, game assets, music, and software — is the property of OnvexaLabs or its licensors
+      and is protected by applicable intellectual property laws.
+    </p>
+    <p>
+      You may not reproduce, distribute, publicly display, or create derivative works from any OnvexaLabs
+      content without our express written permission.
+    </p>
+
+    <h2>8. User Conduct</h2>
+    <p>When using any interactive features of the Services (such as leaderboards), you agree not to:</p>
+    <ul>
+      <li>Submit false, misleading, or fraudulent information.</li>
+      <li>Harass, threaten, or harm other users.</li>
+      <li>Upload or transmit viruses, malware, or other harmful code.</li>
+      <li>Impersonate any person or entity.</li>
+      <li>Exploit bugs or vulnerabilities to gain an unfair advantage.</li>
+    </ul>
+    <p>We reserve the right to ban or block any user who violates these conduct standards.</p>
+
+    <h2>9. Disclaimers</h2>
+    <p>
+      THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED,
+      INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR
+      NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE SERVICES WILL BE UNINTERRUPTED, ERROR-FREE, OR FREE OF
+      HARMFUL COMPONENTS.
+    </p>
+
+    <h2>10. Limitation of Liability</h2>
+    <p>
+      TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ONVEXALABS SHALL NOT BE LIABLE FOR ANY INDIRECT,
+      INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATED TO YOUR USE OF THE
+      SERVICES, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+    </p>
+    <p>
+      OUR TOTAL LIABILITY TO YOU FOR ALL CLAIMS ARISING FROM THESE TERMS OR YOUR USE OF THE SERVICES
+      SHALL NOT EXCEED €50 (FIFTY EUROS).
+    </p>
+
+    <h2>11. Third-Party Services</h2>
+    <p>
+      Our Services may link to or integrate with third-party services (e.g. Google Play, Google AdMob, YouTube, X/Twitter, Linktree).
+      These third parties have their own terms and privacy policies. We are not responsible for their content or practices.
+    </p>
+
+    <h2>12. Modifications to the Services</h2>
+    <p>
+      We reserve the right to modify, suspend, or discontinue any part of the Services at any time, with or without
+      notice. We shall not be liable to you or any third party for any modification, suspension, or discontinuation.
+    </p>
+
+    <h2>13. Changes to These Terms</h2>
+    <p>
+      We may update these Terms from time to time. The updated version will be posted on this page with a revised
+      date. Your continued use of the Services after changes are posted constitutes your acceptance of the revised Terms.
+    </p>
+
+    <h2>14. Governing Law</h2>
+    <p>
+      These Terms are governed by and construed in accordance with the laws of the <strong>Republic of Austria</strong>,
+      without regard to its conflict of law principles. Any disputes arising from these Terms shall be subject to
+      the exclusive jurisdiction of the competent courts in Austria, unless mandatory consumer protection law
+      in your country of residence requires otherwise.
+    </p>
+
+    <h2>15. Contact</h2>
+    <p>
+      If you have any questions about these Terms, please contact us at:<br/>
+      <a href="mailto:onvexalabs@gmail.com">onvexalabs@gmail.com</a>
+    </p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="imprint.html">Imprint</a>
+  </div>
+</footer>
+</body>
+</html>
